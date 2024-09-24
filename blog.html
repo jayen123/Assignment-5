@@ -25,14 +25,17 @@
     </style>
   </head>
   <body>
-    <header class="max-w-[80%] mx-auto mb-8 sticky top-0 left-0 bg-white/20 backdrop-blur-md">
-        <nav class="flex justify-between items-center py-6 lg:mb-10">
+    <header
+      class="max-w-[80%] mx-auto mb-8 sticky top-0 left-0 bg-white/20 backdrop-blur-md"
+    >
+      <nav class="flex justify-between items-center py-6 lg:mb-10">
         <div>
-          <a href="./index.html"
+          <a
+            href="./index.html"
             class="bg-[#B4F461] text-[#111111] btn font-semibold text-xl sm:btn-sm md:btn-md lg:btn-lg"
           >
             Home
-        </a>
+          </a>
         </div>
         <div class="flex items-center gap-4">
           <img src="./assets/logo.png" alt="logo" />
@@ -48,5 +51,63 @@
         </div>
       </nav>
     </header>
+    <main class="max-w-[80%] mx-auto">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium capitalize">
+          What is the document object model (DOM)?
+        </div>
+        <div class="collapse-content">
+          <p>
+            DOM (Document Object Model) holo ekta interface, jar maddhome apnar
+            HTML ba XML document ke ekta tree structure e represent kora hoy.
+            Etar maddhome JavaScript diye webpage-er content, structure, o style
+            ke easily access o modify kora jay, jate webpage ta dynamic ebong
+            interactive hoy.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium capitalize">
+          how do you select an element from the Dom?
+        </div>
+        <div class="collapse-content">
+          <p>
+            DOM theke element select korar jonne JavaScript e bibhinno methods
+            use kora hoy. getElementBy(ID,TagName,ClassName) and querySelector
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          what is the event delegation in the context of the DOM, and why is it
+          useful?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Event Delegation holo ekta technique, jekhane ekta parent element er
+            upor ekta event listener set kora hoy, jar madhome tar child
+            elements gulor events handle kora jay. Er mane, pratyek child
+            element er jonno alada listener set na kore sudhu ekta listener use
+            korei sob events handle kora jay.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do you manipulate an element's attributes and styles using the
+          Dom?
+        </div>
+        <div class="collapse-content">
+          <p>
+            DOM er maddhome apni kono HTML element er attributes o styles
+            manipulate korte paren.
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
