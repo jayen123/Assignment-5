@@ -25,10 +25,11 @@
     </style>
   </head>
   <body class="font-lexend">
-    <header class="max-w-[80%] mx-auto mb-8">
-      <nav class="flex justify-between items-center py-6 mb-14">
+    <header class="mb-8 sticky top-0 left-0 bg-white/20 backdrop-blur-md">
+      <nav class="max-w-[80%] mx-auto flex justify-between items-center py-6 lg:mb-10">
         <div>
           <button
+          id="blog-page-btn"
             class="bg-[#B4F461] text-[#111111] btn font-semibold text-xl sm:btn-sm md:btn-md lg:btn-lg"
           >
             Blog
@@ -36,25 +37,25 @@
         </div>
         <div class="flex items-center gap-4">
           <img src="./assets/logo.png" alt="logo" />
-          <h2 class="font-semibold text-xl">Donate Bangladesh</h2>
+          <h2 class="font-semibold text-xl hidden lg:block">Donate Bangladesh</h2>
         </div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-1 lg:gap-3">
           <img src="./assets/coin.png" alt="coin" />
-          <h3 class="text-[#111111b3] font-medium text-xl">
+          <h3 class="text-[#111111b3] font-medium lg:text-xl">
             <span id="my-wallet">5500</span> BDT
           </h3>
         </div>
       </nav>
-      <div class="flex justify-center gap-4">
+      <div class="flex justify-center pb-4 gap-4">
         <button
           id="donation-card-open-button"
-          class="bg-[#B4F461] text-[#111111] font-semibold xl:text-xl btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+          class="bg-[#B4F461] text-[#111111] font-semibold xl:text-xl btn sm:btn-sm md:btn-md lg:btn-lg"
         >
           Donation
         </button>
         <button
           id="history-button"
-          class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+          class="btn sm:btn-sm md:btn-md lg:btn-lg"
         >
           History
         </button>
@@ -62,7 +63,7 @@
     </header>
     <main class="max-w-[80%] mx-auto space-y-6">
       <!-- Successful popup -->
-      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <dialog id="my_modal_5" class="modal modal-middle">
         <div class="modal-box flex flex-col items-center">
           <h2 class="text-3xl font-bold mb-3">Congrats!</h2>
           <img src="./assets/coin.png" alt="coin" />
@@ -78,7 +79,7 @@
       </dialog>
       <!-- Donate card -->
       <div id="donate-card-container">
-        <div class="grid lg:grid-cols-2 gap-4 lg:p-8">
+        <div class="grid lg:grid-cols-2 gap-4 lg:p-8 mb-5">
           <div>
             <img src="./assets/noakhali.png" alt="noakhali" />
           </div>
@@ -120,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="grid lg:grid-cols-2 gap-4 lg:p-8">
+        <div class="grid lg:grid-cols-2 gap-4 lg:p-8 mb-5">
           <div>
             <img src="./assets/feni.png" alt="feni" />
           </div>
@@ -164,7 +165,7 @@
             </div>
           </div>
         </div>
-        <div class="grid lg:grid-cols-2 gap-4 lg:p-8">
+        <div class="grid lg:grid-cols-2 gap-4 lg:p-8 mb-5">
           <div>
             <img src="./assets/quota-protest.png" alt="quota-protest" />
           </div>

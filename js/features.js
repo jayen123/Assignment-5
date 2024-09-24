@@ -5,6 +5,7 @@ document
     event.target.classList.add("bg-[#B4F461]");
     document.getElementById("history-button").classList.remove("bg-[#B4F461]");
   });
+
 document
   .getElementById("history-button")
   .addEventListener("click", function (event) {
@@ -12,3 +13,8 @@ document
     event.target.classList.add("bg-[#B4F461]");
     document.getElementById("donation-card-open-button").classList.remove("bg-[#B4F461]");
   });
+
+document.getElementById("blog-page-btn").addEventListener("click", function(){
+  window.location.href = "./blog.html"
+})
+
