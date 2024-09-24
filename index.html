@@ -173,10 +173,13 @@
               class="flex items-center gap-3 text-[#111111b3] font-medium text-xl mb-4"
             >
               <img src="./assets/coin.png" alt="coin" />
-              <span>2400</span>
+              <span id="quota-donate-wallet">2400</span>
               <span>BDT</span>
             </div>
-            <h2 class="font-bold text-xl text-[#111111] mb-4">
+            <h2
+              id="donation-card-title-quota"
+              class="font-bold text-xl text-[#111111] mb-4"
+            >
               Aid for Injured in the Quota Movement
             </h2>
             <p class="text-[#111111b3] mb-6">
@@ -193,10 +196,14 @@
             <div class="space-y-4">
               <input
                 type="text"
+                id="donate-input-for-quota"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full text-[#111111d9] font-normal text-base"
               />
-              <button class="bg-[#B4F461] btn btn-wide w-full">
+              <button
+                id="donate-for-quota"
+                class="bg-[#B4F461] btn btn-wide w-full"
+              >
                 Donate Now
               </button>
             </div>
@@ -210,6 +217,7 @@
     <script src="js/utilities.js"></script>
     <script src="js/donateNoakhali.js"></script>
     <script src="js/donateFeni.js"></script>
+    <script src="js/donateQuotaMovement.js"></script>
     <script src="js/features.js"></script>
   </body>
 </html>
